@@ -10,8 +10,8 @@ show_excerpts: true # set to true to show excerpts on the homepage
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 sass:
   sass_dir: _sass
-plainwhite:
-  name: Adam Denisov
+plainwhite: #하단에 넣으면됨
+  name: Int29
   tagline: Data-Analytist, Machine-Learning Engineer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
@@ -19,8 +19,22 @@ plainwhite:
   dark_mode: true # set to true to add dark mode toggle
   portfolio_image: "assets/img.png" # the path from the base directory of the site to the image to display (no / at the start)
   html_lang: "KR" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
+  
+  
+  navigation: # 상단 네비게이션
+    - title: "통계학"
+      url: "/Statistics"
+    - title: "데이터분석"
+      url: "/Data-analysis"
+    - title: "머신러닝"
+      url: "/ML"
+    - title: "파이썬"
+      url: "/Python"
+  
+  
+  
   condensed_mobile:
-    #- home
+    - home
     - page
     - post
   # generate social links in footer
